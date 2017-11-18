@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/size_10dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imvw_pic_10"
+        android:layout_width="@dimen/size_100dp"
+        android:layout_height="@dimen/size_100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_login" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/imvw_pic_10"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txvw_title_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvw_pic_10"
+            android:layout_toRightOf="@+id/imvw_pic_10"
+            android:textStyle="bold"
+            android:textSize="@dimen/size_12sp"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/txvw_price_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvw_pic_10"
+            android:layout_toRightOf="@+id/imvw_pic_10"
+            android:textSize="@dimen/size_10sp"
+            android:text="TextView" />
+    </LinearLayout>
+</RelativeLayout>

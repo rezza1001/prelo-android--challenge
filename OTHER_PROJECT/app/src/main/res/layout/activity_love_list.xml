@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite_00"
+    android:padding="@dimen/size_5dp"
+    tools:context="com.gumilang.rezza.challengeapps.activity.LoveListActivity">
+
+    <RelativeLayout
+        android:id="@+id/rvly_header_00"
+        android:background="@color/colorWhite_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_120dp">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imvw_profile_10"
+            android:layout_width="@dimen/size_100dp"
+            android:layout_height="@dimen/size_100dp"
+            app:civ_border_width="@dimen/size_2dp"
+            android:layout_centerVertical="true"
+            app:civ_border_color="@color/colorBlue_02"
+            android:src="@drawable/ic_login"/>
+
+        <TextView
+            android:id="@+id/txvw_title_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_20dp"
+            android:layout_toEndOf="@+id/imvw_profile_10"
+            android:layout_toRightOf="@+id/imvw_profile_10"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:textSize="@dimen/size_16sp"
+            android:textStyle="bold"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/txvw_name_12"
+            android:layout_below="@+id/txvw_title_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvw_profile_10"
+            android:layout_toRightOf="@+id/imvw_profile_10"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:textSize="@dimen/size_14sp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/txvw_email_13"
+            android:layout_below="@+id/txvw_name_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvw_profile_10"
+            android:layout_toRightOf="@+id/imvw_profile_10"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:textSize="@dimen/size_14sp"
+            android:text="Email" />
+        <TextView
+            android:id="@+id/txvw_address_14"
+            android:layout_below="@+id/txvw_email_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/imvw_profile_10"
+            android:layout_toRightOf="@+id/imvw_profile_10"
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:textSize="@dimen/size_14sp"
+            android:text="Address" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rvly_body_00"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rvly_header_00">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
